@@ -27,12 +27,13 @@
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
-                          renderer="physicallyCorrectLights: true"
+                    renderer="physicallyCorrectLights: true"
+                    positionMinAccuracy: 100;
                     scale=".03162979014061854 .03162979014061854 .03162979014061854"
                     gps-entity-place="latitude: 40.09826422914126; longitude: -74.22798545099796; position= 10 30 10; rotation= 0 90 0;"
                 ></a-entity>
 <a-scene>
-            <a-camera id="camera1" look-controls-enable='false' arjs-look-controls='smoothingFactor 0.01' gps-camera='gpsMinDistance: 10; gpsTimeInterval:10' rotation-reader> </a-camera>
+            <a-camera id="camera1" look-controls-enable='false' arjs-look-controls='smoothingFactor 0.01' gps-camera='gpsMinDistance: 0.1; gpsTimeInterval:10' rotation-reader> </a-camera>
        
         </a-scene>
     </body>
